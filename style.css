@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Lobster&family=Open+Sans:wght@300;400;600;800&family=Tilt+Prism&family=Work+Sans:wght@400;500;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Tilt Prism', cursive;
+font-family: 'Work Sans', sans-serif;
+}
+
+.nav-container{
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%px;
+    height: 130px;
+    background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+ 
+
+    
+}
+.nav-container a{
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logo-container{
+    display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.logo-container img{
+    border: 1px solid pink;
+    width: 86.041px;
+    height: 40px;
+    object-fit: cover;
+}
+.logo-container h3{
+    
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B0223;
+    margin-left: 20px;
+    width: 50%;
+}
+.gamer-g{
+ color:hotpink;
+}
+
+.nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+.fa-youtube{
+    color: red;
+}
+.fa-tiktok{
+    font-size: 15px;
+    margin-left: 8px;
+}
+.follow{
+     width: 262px;
+     padding: 20px 0;
+     border-radius: 8px;
+     background: rgba(11, 2, 35, 0.10);
+     
+
+}
+/*banner section start*/
+.baner-section{
+
+     width: 1400px;
+    /* height: 700px; */
+    margin: 0 auto;
+    display: flex;
+
+
+    
+    
+}
+.baner-details{
+   width: 50%;
+ fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+ text-align: center;
+ margin-top: 50px;
+}
+
+.primary-h3{
+    color: #0B0223;
+font-family: Work Sans;
+font-size: 3rem;;
+text-transform: uppercase;
+margin-bottom: 0%;
+}
+.banner-title{
+    font-size: 95px;
+    font-weight: 800;
+     text-transform: uppercase;
+     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+margin-top: 0;
+}
+.primary-p{
+    color: #534C64;
+    font-size: 20px;
+    font-style: normal;
+   font-weight: 500;
+   text-transform: lowercase;
+}
+.primary-btn{
+    color: #FFF;
+font-size: 20px;
+font-weight: 600;
+text-transform: uppercase;
+border-radius: 48px;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+display: inline-flex;
+padding: 20px 30px;
+align-items: flex-start;
+gap: 10px;
+}
+.banner-btn{
+    font-size: 20px;
+    border-radius: 48px;
+background: #4EC5F7;
+display: inline-flex;
+padding: 20px 40px;
+align-items: flex-start;
+gap: 10px;
+}
+.baner-img{
+width: 50%;
+
+}
+.baner-img img{
+    width: 100%;
+    height: auto;
+}
+/*banner section end*/
+
+
+
+
+
+@media screen and (max-width:426px) {
+    .nav-container {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+   
+    .nav-menu{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+ .baner-section{
+    flex-direction: column;
+
+ }
+ .baner-details{
+   text-align: center;
+   width:25%;
+   margin-left: 30px;
+ }
+ .baner-img{
+    width: 25%;
+    margin-left: 25px;
+ }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .nav-container  {
+        flex-direction: column;
+        margin-top: 80px;
+     align-items: flex-start;
+     margin-left: 30px;
+    
+    }
+    .baner-section{
+        flex-direction: column;
+    
+    }
+    .baner-details{
+        width: 30%;
+
+      margin-top: 50px;
+     }
+     .baner-img{
+        width: 25%;
+        margin-left: 50px;
+     }
+
+  
+     
+}
