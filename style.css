@@ -243,16 +243,25 @@ margin: 0 auto;
 
 /*game icon start*/
 .grid-icon-container{
- min-height: 200px;
- display: grid;
- grid-template-columns: repeat(5 ,1fr) ;
-margin-top: 100px;
+ margin-top: 100px;
 margin-bottom: 100px;
-justify-items: center;
-align-items: center;
-align-content: center;
+ row-gap: 1000px;
+ column-gap: 1000px;
+} 
+.grid-icon-5{
+ margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    justify-content: space-evenly;
+ }
+.grid-icon-4{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+justify-content: space-evenly;
 
 }
+
 .primary-icon{
     /* border: 1px solid rgb(55, 255, 0); */
 display: flex;
