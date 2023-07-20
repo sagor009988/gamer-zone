@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=Lobster&family=Open+Sans:wght@300;400;600;800&family=Tilt+Prism&family=Work+Sans:wght@400;500;700;800&display=swap');
-
+.hide{
+    display: none;
+}
 
 *{
     box-sizing: border-box;
@@ -110,8 +112,7 @@ text-transform: uppercase;
 margin-bottom: 0%;
 }
 .banner-title{
-    font-size: 95px;
-    font-weight: 800;
+    font-size: 6rem;
      text-transform: uppercase;
      background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
       background-clip: text;
@@ -137,6 +138,8 @@ background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 padding: 20px 30px;
 align-items: flex-start;
 gap: 10px;
+border: none;
+cursor: pointer;
 }
 .banner-btn{
     font-size: 20px;
@@ -145,6 +148,9 @@ background: #4EC5F7;
 padding: 20px 40px;
 align-items: flex-start;
 gap: 10px;
+border: none;
+cursor: pointer;
+margin-left: 30px;
 }
 .baner-img{
 width: 50%;
@@ -188,10 +194,14 @@ border-radius: 16px;
 background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 .online-img1:hover{
- border-bottom: 10px solid red;
-   border-radius: 10px;
-   cursor: pointer;
+ /* border: 10px solid red;
+  border-right: 50px solid red;
+   cursor: pointer; */
+    outline: none !important;
+     border: 5px solid red !important;
+       box-shadow:  -5px -5px 0px 5px rgb(242, 4, 4) !important;
 
+   
 }
 
 
@@ -362,7 +372,7 @@ margin-top: 50px;
 
 
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .nav-container{
     display: flex;
     justify-content: center;
@@ -434,4 +444,64 @@ margin-top: 50px;
   }
 
 
+} */
+
+/* new mediya try now from hERE*/
+@media screen and (min-width:576px) and (max-width:925px){
+    .nav-container{
+        flex-direction: column;
+      }
+   
+    .baner-section{
+        flex-direction: column;
+        width: 100%;
+    }
+    .onlie-container{
+        flex-direction: column;
+        margin-left: 200px;
+        gap: 50px;
+    }
+
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .nav-container {
+        flex-direction: column;
+        margin-top: 50px;
+    
+    }
+    .nav-menu{
+        flex-direction: column;
+      row-gap: 20px;
+    
+    }
+    .baner-section{
+        flex-direction: column;
+        margin-right: 0px;
+        width: 100%;
+      
+    }
+    .baner-section{
+        margin-top: 100px;
+    } 
+    .banner-title{
+        font-size: 3rem;
+    }
+  .primary-btn{
+    margin-bottom: 15px;
+  }
+  .baner-img{
+    width: 350px;
+  }
+  .onlie-container{
+    flex-direction: column;
+    row-gap: 50px;
+    margin-left: 40px;
+  }
 }
