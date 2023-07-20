@@ -210,7 +210,7 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
 .play-now-img{
-  background-image: url(/images/Rectangle\ 55.png);
+  background-image: url(./images/Rectangle\ 55.png);
   width:634px;
 height: 650px;
 flex-shrink: 0;
